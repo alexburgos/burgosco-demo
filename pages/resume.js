@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 const Resume = props => {
 	return (
 		<Layout>
-			<div>
+			<section>
 				<h1>Experience:</h1>
 				<p>
 					Food52 - Front End Engineer — NY — 2017 - 2019 As part of the Product
@@ -38,7 +38,7 @@ const Resume = props => {
 					Stripe’s API and worked on the navigation elements of the platform.
 				</p>
 				<p>You can download a copy of my resume here.</p>
-			</div>
+			</section>
 		</Layout>
 	);
 };

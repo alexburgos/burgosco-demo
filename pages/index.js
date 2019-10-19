@@ -10,9 +10,9 @@ const Home = () => (
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<div className="hero">
+			<section className="hero">
 				<h1 className="title">Alex Burgos</h1>
-			</div>
+			</section>
 
 			<style jsx>{home}</style>
 		</Layout>

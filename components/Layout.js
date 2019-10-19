@@ -8,7 +8,7 @@ const Layout = props => (
     <Nav/>
     {props.children}
     <Footer />
-		<style jsx>{layout}</style>
+		<style jsx global>{layout}</style>
 	</div>
 );
 

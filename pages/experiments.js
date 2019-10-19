@@ -4,7 +4,9 @@ import Layout from '../components/Layout';
 const Experiments = () => {
   return (
 		<Layout>
-			<h1>Currently building this...fun!</h1>
+			<section>
+				<h1>Currently building this...fun!</h1>
+			</section>
 		</Layout>
 	);
 }
