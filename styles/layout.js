@@ -7,7 +7,21 @@ export default css.global`
 			Helvetica, sans-serif;
 	}
 
+	:root {
+		--palm-green: #598a78;
+		--palm-brown: #8b4513;
+	}
+
 	section {
 		text-align: center;
+	}
+
+	h1 {
+		color: var(--palm-green);
+	}
+
+	a {
+		color: var(--palm-brown);
+		text-decoration: none;
 	}
 `;
