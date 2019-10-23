@@ -6,7 +6,6 @@ export default css`
 	}
 	ul {
 		display: flex;
-		justify-content: space-between;
 	}
 	nav > ul {
 		padding: 4px 16px;
