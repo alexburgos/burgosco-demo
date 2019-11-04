@@ -21,7 +21,7 @@ export default css.global`
 	}
 
 	a {
-		color: var(--palm-brown);
+		color: var(--palm-green);
 		text-decoration: none;
 	}
 `;
