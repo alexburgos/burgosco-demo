@@ -16,6 +16,6 @@ export default css`
 	}
 	a {
 		text-decoration: none;
-		font-size: 13px;
+		font-size: 16px;
 	}
 `;

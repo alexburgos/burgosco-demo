@@ -16,8 +16,8 @@ const Nav = () => (
 				</Link>
 			</li>
 			<li>
-				<Link href="/experiments">
-					<a>Experiments/Playground</a>
+				<Link href="/play">
+					<a>Playground</a>
 				</Link>
 			</li>
 		</ul>

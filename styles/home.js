@@ -1,48 +1,34 @@
 import css from 'styled-jsx/css';
 
 export default css`
+
 	.hero {
-		width: 100%;
-		color: #333;
+		background-image: url(/water.jpeg);
+ 		background-size: 100%;
 	}
+	
 	.title {
+		color: black;
+		background-color: white;
+		mix-blend-mode: screen;
+    font-size: 98px;
+    font-weight: bolder;
+    line-height: 210px;
 		margin: 0;
 		width: 100%;
-		padding-top: 80px;
-		line-height: 1.15;
-		font-size: 48px;
+    height: 100%;
 	}
-	.title,
-	.description {
-		text-align: center;
-	}
-	.row {
-		max-width: 880px;
-		margin: 80px auto 40px;
+
+	.main {
 		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+		flex: 1;
 	}
-	.card {
-		padding: 18px 18px 24px;
-		width: 220px;
-		text-align: left;
-		text-decoration: none;
-		color: #434343;
-		border: 1px solid #9b9b9b;
-	}
-	.card:hover {
-		border-color: #067df7;
-	}
-	.card h3 {
-		margin: 0;
-		color: #067df7;
-		font-size: 18px;
-	}
-	.card p {
-		margin: 0;
-		padding: 12px 0 0;
-		font-size: 13px;
-		color: #333;
+
+	.about {
+		margin: 0 auto;
+		text-align: justify;
+		width: 600px;
 	}
 `;
