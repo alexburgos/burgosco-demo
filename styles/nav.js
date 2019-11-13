@@ -15,7 +15,13 @@ export default css`
 		padding: 6px 8px;
 	}
 	a {
+		cursor: pointer;
+		font-family: 'Fira Code Light';
 		text-decoration: none;
 		font-size: 16px;
+	}
+
+	a:hover {
+		color: var(--palm-brown);
 	}
 `;

@@ -1,10 +1,25 @@
 import css from 'styled-jsx/css';
 
 export default css.global`
+	@font-face {
+		font-family: 'Fira Sans';
+		src: url('/public/fonts/FiraSans-Book.otf');
+		font-weight: normal;
+		font-display: auto;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'Fira Code';
+		src: url('/public/fonts/FiraCode-Retina.otf');
+		font-weight: normal;
+		font-display: auto;
+		font-style: normal;
+	}
+
 	:global(body) {
 		margin: 0;
-		font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
-			Helvetica, sans-serif;
+		font-family: 'Fira Sans', Helvetica, sans-serif;
 	}
 
 	:root {
@@ -14,7 +29,7 @@ export default css.global`
 
 	#__next {
 		display: flex;
-    min-height: 100vh;
+		min-height: 100vh;
 		flex-direction: column;
 		align-items: center;
 	}
@@ -30,7 +45,14 @@ export default css.global`
 
 	a {
 		color: var(--palm-green);
+		font-family: 'Fira Code', monospaced;
 		font-size: 16px;
 		text-decoration: none;
+	}
+
+	@media screen and (max-width: 600px) {
+		#__next {
+			padding: 0 20px;
+		}
 	}
 `;
