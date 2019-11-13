@@ -11,7 +11,9 @@ export default css.global`
 
 	@font-face {
 		font-family: 'Fira Code';
-		src: url('/public/fonts/FiraCode-Retina.otf');
+		src: url('/public/fonts/FiraCode-Retina.otf') format('opentype'),
+			url('/public/fonts/FiraCode-Retina.woff') format('woff'),
+			url('/public/fonts/FiraCode-Retina.ttf') format('truetype');
 		font-weight: normal;
 		font-display: auto;
 		font-style: normal;
@@ -45,7 +47,7 @@ export default css.global`
 
 	a {
 		color: var(--palm-green);
-		font-family: 'Fira Code', monospaced;
+		font-family: 'Fira Code', monospace;
 		font-size: 16px;
 		text-decoration: none;
 		position: relative;
