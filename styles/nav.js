@@ -16,12 +16,7 @@ export default css`
 	}
 	a {
 		cursor: pointer;
-		font-family: 'Fira Code Light';
 		text-decoration: none;
 		font-size: 16px;
-	}
-
-	a:hover {
-		color: var(--palm-brown);
 	}
 `;

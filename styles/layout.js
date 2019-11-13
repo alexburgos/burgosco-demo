@@ -48,6 +48,31 @@ export default css.global`
 		font-family: 'Fira Code', monospaced;
 		font-size: 16px;
 		text-decoration: none;
+		position: relative;
+	}
+
+	a:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		bottom: -3px;
+		left: 0;
+		background-color: var(--palm-brown);
+		visibility: hidden;
+		border-radius: 5px;
+		transform: scaleX(0);
+		transition: 0.15s linear;
+	}
+
+	a:hover {
+		color: var(--palm-brown);
+	}
+
+	a:hover:before,
+	a:focus:before {
+		visibility: visible;
+		transform: scaleX(1);
 	}
 
 	@media screen and (max-width: 600px) {
