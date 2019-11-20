@@ -4,7 +4,6 @@ export default css`
 	.experience {
 		display: flex;
 		flex-direction: column;
-		flex: 1;
 		width: 600px;
 	}
 

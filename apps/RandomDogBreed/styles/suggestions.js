@@ -2,7 +2,7 @@ import css from 'styled-jsx/css';
 
 export default css`
 	.Suggestions {
-		border: 2px solid #cc071e;
+		border: 2px solid var(--palm-brown);
 		list-style: none;
 		max-height: 150px;
 		margin: 3px auto 0;
@@ -13,7 +13,7 @@ export default css`
 	}
 
 	.Suggestions li {
-		border-bottom: 1px solid #888;
+		border-bottom: 1px solid #999;
 		cursor: pointer;
 		font-size: 18px;
 		padding: 5px 10px;
@@ -21,7 +21,7 @@ export default css`
 
 	.Suggestions--active,
 	.Suggestions li:hover {
-		background-color: #cc071e;
+		background-color: var(--palm-brown);
 		color: white;
 	}
 `;

@@ -18,11 +18,10 @@ export default css`
 		height: 100%;
 	}
 
-	.main {
+	.home {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		flex: 1;
 	}
 
 	.about {

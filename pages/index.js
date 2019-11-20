@@ -4,10 +4,10 @@ import home from '../styles/home';
 
 const Home = () => (
 	<Layout>
-		<section className="main">
-			<div className="hero">
+		<section className="home main">
+			<section className="hero">
 				<h1 className="title">Alex Burgos</h1>
-			</div>
+			</section>
 
 			<section className="about">
 				<p>

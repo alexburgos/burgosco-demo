@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import moment from 'moment';
 import Suggestions from './Suggestions';
 import SavedQueries from './Queries';
-import { useFetchDogHook } from '../utils/hooks';
+import { useFetchDogHook } from '../hooks';
+import { useFetchBreedsHook } from '../hooks'
 import form from '../styles/form';
 
-const Form = ({ suggestions }) => {
+const Form = () => {
+	const { suggestions, error } = useFetchBreedsHook();
 	const [inputVal, setInputVal] = useState('');
 	const [query, setQuery] = useState('');
 	const [activeSuggestion, setActiveSuggestion] = useState(0);
@@ -26,13 +26,11 @@ const Form = ({ suggestions }) => {
 
 	function saveQuery(currentQuery) {
 		let queries = [...savedQueries];
-		let timeStamp = moment().format('YYYY-MM-DD, h:mm:ss a');
 		let newQuery = {};
 
 		if (queries.includes(currentQuery)) return;
 
 		newQuery.text = currentQuery;
-		newQuery.timeStamp = timeStamp;
 		queries.push(newQuery);
 		setSavedQueries(queries);
 	}
@@ -116,9 +114,6 @@ const Form = ({ suggestions }) => {
 		if (!queries.includes(queryToDelete)) return;
 
 		let filteredSavedQueries = queries.filter(query => query !== queryToDelete);
-
-		// setRandomDogImage(null);
-		// setDogFetchError(null);
 		setSavedQueries(filteredSavedQueries);
 	}
 
@@ -129,8 +124,6 @@ const Form = ({ suggestions }) => {
 
 	function clearSearchHistory() {
 		setSavedQueries([]);
-		// setRandomDogImage(null);
-		// setDogFetchError(null);
 	}
 
 	/**
@@ -143,7 +136,9 @@ const Form = ({ suggestions }) => {
 
 	return (
 		<div className="Search">
-			<label>Type in this Box ⤵</label>
+			<label>
+				Type in this Box <span className="Searc__arrow">⤵</span>
+			</label>
 			<input
 				onChange={handleChange}
 				onKeyDown={handleKeyDown}
@@ -164,20 +159,13 @@ const Form = ({ suggestions }) => {
 				/>
 			)}
 			{isLoading && <p className="Search__loading loading">Loading...</p>}
-			{randomDogImage && <img className="Search__result" src={randomDogImage} alt={query} />}
+			{randomDogImage && (
+				<img className="Search__result" src={randomDogImage} alt={query} />
+			)}
 			{dogFetchError && <p>{dogFetchError}</p>}
 			<style jsx>{form}</style>
 		</div>
 	);
 };
-
-Form.defaultProps = {
-	suggestions: [],
-};
-
-Form.propTypes = {
-	suggestions: PropTypes.array.isRequired,
-};
-
 
 export default Form;

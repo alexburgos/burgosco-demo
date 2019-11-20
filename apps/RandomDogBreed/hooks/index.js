@@ -1,6 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
 import { DOG_BREEDS_URL } from '../constants';
-import { DOG_BREED_URL } from '../constants';
 
 export const useFetchBreedsHook = () => {
 	const [suggestions, setSuggestions] = useState(['dog']);
@@ -36,8 +35,7 @@ export const useFetchDogHook = (breed) => {
 	const firstRender = useRef(true);
   const [randomDogImage, setRandomDogImage] = useState(null);
   const [dogFetchError, setDogFetchError] = useState(null);
-  const [isLoading, setLoading] = useState(false);
-
+	const [isLoading, setLoading] = useState(false);
 
 	useEffect(() => {
 		if (breed.length > 0) {
@@ -46,8 +44,8 @@ export const useFetchDogHook = (breed) => {
 
 			fetch(
 				breed.length > 0
-					? `${DOG_BREED_URL}/breed/${breed.toLowerCase()}/images/random`
-					: `${DOG_BREED_URL}/breeds/image/random`
+					? `${DOG_BREEDS_URL}/breed/${breed.toLowerCase()}/images/random`
+					: `${DOG_BREEDS_URL}/breeds/image/random`
 			)
 				.then(response => {
 					return response.json();

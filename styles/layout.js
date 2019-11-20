@@ -36,6 +36,10 @@ export default css.global`
 		align-items: center;
 	}
 
+	.main {
+		flex: 1;
+	}
+
 	section {
 		text-align: center;
 	}
@@ -43,6 +47,10 @@ export default css.global`
 	h1 {
 		color: var(--palm-green);
 		font-size: 32px;
+	}
+
+	h2 {
+		color: var(--palm-green);
 	}
 
 	a {

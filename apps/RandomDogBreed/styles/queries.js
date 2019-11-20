@@ -27,7 +27,7 @@ export default css`
 	}
 
 	.SavedQueries li {
-		background: #cc071e;
+		background: var(--palm-green);
 		color: white;
 		display: flex;
 		align-items: center;

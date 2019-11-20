@@ -5,16 +5,23 @@ export default css`
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin: 0 auto;
+		margin-top: 25px;
 	}
 
 	.Search label {
 		display: block;
-		margin-bottom: 15px;
+		font-size: 13px;
+		margin-bottom: 5px;
+	}
+
+	.Search__arrow {
+		position: relative;
+		top: 5px;
+		left: 5px;
 	}
 
 	.Search input {
-		border: 2px solid #cc071e;
+		border: 2px solid var(--palm-green);
 		border-radius: 0;
 		color: #444;
 		font-size: 16px;

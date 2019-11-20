@@ -5,7 +5,7 @@ import resume from '../styles/resume';
 const Resume = props => {
 	return (
 		<Layout>
-			<section className="experience">
+			<section className="experience main">
 				<h1>Experience:</h1>
 				<p>
 					<span>Food52 - Front End Engineer — NY — 2017 - 2019</span> As part of the Product
