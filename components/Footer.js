@@ -4,7 +4,7 @@ import footer from '../styles/footer';
 
 const Footer = () => (
 	<footer>
-		<p>Created with 🖤 in Stockholm, Sweden.</p>
+		<p>🖤 Created with <a href="https://nexts.org">Next.js</a></p>
 
 		<style jsx>{footer}</style>
 	</footer>
