@@ -8,6 +8,9 @@ export default css`
 
 	.experiment {
 		margin-top: 25px;
+		border: 1px solid var(--palm-green);
+		padding: 20px;
+		border-radius: 4px;
 	}
 
 	.experiment h3 {

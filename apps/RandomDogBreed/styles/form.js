@@ -36,8 +36,10 @@ export default css`
 	}
 
 	.Search__result {
-		margin-top: 15px;
-		max-width: 250px;
+		border-radius: 50%;
+		margin-top: 20px;
+		height: 200px;
+		width: 200px;
 	}
 
 	@media (min-width: 500px) {

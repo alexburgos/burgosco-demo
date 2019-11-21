@@ -28,11 +28,12 @@ const Form = () => {
 		let queries = [...savedQueries];
 		let newQuery = {};
 
-		if (queries.includes(currentQuery)) return;
+		if (queries.some(query => query.text === currentQuery)) return;
 
 		newQuery.text = currentQuery;
 		queries.push(newQuery);
 		setSavedQueries(queries);
+		setInputVal('');
 	}
 
 	function handleChange(e) {
@@ -55,7 +56,6 @@ const Form = () => {
 	function handleClick(e) {
 		let currentQuery = e.currentTarget.innerText;
 
-		setInputVal(currentQuery);
 		setQuery(currentQuery);
 		saveQuery(currentQuery);
 		setFilteredSuggestions([]);
@@ -71,11 +71,10 @@ const Form = () => {
 			if (e.target.value.length === 0) return;
 			currentQuery = filteredSuggestions[activeSuggestion];
 			if (currentQuery) {
-				setInputVal(currentQuery);
 				setQuery(currentQuery);
+				saveQuery(currentQuery);
 				setActiveSuggestion(0);
 				setShowSuggestions(false);
-				saveQuery(currentQuery);
 			}
 		}
 
