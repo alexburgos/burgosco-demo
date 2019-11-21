@@ -1,7 +1,5 @@
-import css from 'styled-jsx/css';
+import styled from 'styled-components';
 
-export default css`
-	footer {
-		text-align: center;
-	}
+export default styled.footer`
+	text-align: center;
 `;

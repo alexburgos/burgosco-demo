@@ -1,22 +1,21 @@
-import css from 'styled-jsx/css';
+import styled from 'styled-components';
 
-export default css`
-	nav {
-		text-align: center;
-	}
-	ul {
-		display: flex;
-	}
-	nav > ul {
-		padding: 4px 16px;
-	}
-	li {
-		display: flex;
-		padding: 6px 8px;
-	}
-	a {
-		cursor: pointer;
-		text-decoration: none;
-		font-size: 16px;
-	}
+export const StyledNav = styled.nav`
+	text-align: center;
+`;
+
+export const StyledUl = styled.ul`
+	display: flex;
+	padding: 4px 16px;
+`;
+
+export const StyledLi = styled.li `
+	display: flex;
+	padding: 6px 8px;
+`;
+
+export const StyledAnchor = styled.a`
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 16px;
 `;

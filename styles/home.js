@@ -1,43 +1,28 @@
-import css from 'styled-jsx/css';
+import styled from 'styled-components';
 
-export default css`
-	.hero {
-		background-image: url(/water.jpeg);
-		background-size: 100%;
-	}
-
-	.title {
-		color: black;
-		background-color: white;
-		mix-blend-mode: screen;
-		font-size: 98px;
-		font-weight: bolder;
-		line-height: 210px;
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-
-	.home {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-
-	.about {
-		margin: 0 auto;
-		text-align: justify;
-		width: 600px;
-	}
+export const StyledTitle = styled.h1`
+	font-size: 98px;
+	font-weight: bolder;
+	margin: 0;
 
 	@media screen and (max-width: 600px) {
-		.title {
-			font-size: 49px;
-			line-height: 105px;
-		}
+		font-size: 49px;
+		line-height: 105px;
+	}
+`;
 
-		.about {
-			width: 100%;
-		}
+export const StyledHomeContainer = styled.main`
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+`;
+
+export const StyledAboutSection = styled.p`
+	margin: 0 auto;
+	text-align: justify;
+	width: 600px;
+	@media screen and (max-width: 600px) {
+		width: 100%;
 	}
 `;

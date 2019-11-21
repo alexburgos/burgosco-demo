@@ -1,29 +1,28 @@
 import React from 'react'
 import Link from 'next/link'
-import nav from '../styles/nav';
+// import nav from '../styles/nav';
+import { StyledNav, StyledUl, StyledLi, StyledAnchor } from '../styles/nav';
 
 const Nav = () => (
-	<nav>
-		<ul>
-			<li>
+	<StyledNav>
+		<StyledUl>
+			<StyledLi>
 				<Link href="/">
-					<a>Home</a>
+					<StyledAnchor>Home</StyledAnchor>
 				</Link>
-			</li>
-			<li>
+			</StyledLi>
+			<StyledLi>
 				<Link href="/resume">
-					<a>Resume</a>
+					<StyledAnchor>Resume</StyledAnchor>
 				</Link>
-			</li>
-			<li>
+			</StyledLi>
+			<StyledLi>
 				<Link href="/experiments">
-					<a>Playground</a>
+					<StyledAnchor>Playground</StyledAnchor>
 				</Link>
-			</li>
-		</ul>
-
-		<style jsx>{nav}</style>
-	</nav>
+			</StyledLi>
+		</StyledUl>
+	</StyledNav>
 );
 
 export default Nav

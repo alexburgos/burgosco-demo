@@ -1,6 +1,6 @@
-import css from 'styled-jsx/css';
+import { createGlobalStyle } from 'styled-components';
 
-export default css.global`
+export default createGlobalStyle`
 	@font-face {
 		font-family: 'Fira Sans';
 		src: url('/public/fonts/FiraSans-Book.otf');
@@ -19,14 +19,15 @@ export default css.global`
 		font-style: normal;
 	}
 
-	:global(body) {
-		margin: 0;
-		font-family: 'Fira Sans', Helvetica, sans-serif;
-	}
-
 	:root {
 		--palm-green: #598a78;
 		--palm-brown: #8b4513;
+	}
+
+
+	body{
+		margin: 0;
+		font-family: 'Fira Sans', Helvetica, sans-serif;
 	}
 
 	#__next {
@@ -41,20 +42,22 @@ export default css.global`
 	}
 
 	section {
+		flex: 1;
 		text-align: center;
 	}
 
-	h1 {
+
+	h1, h2, h3, h4, h5, h6 {
 		color: var(--palm-green);
-		font-size: 32px;
 	}
 
-	h2 {
-		color: var(--palm-green);
+	h1 {
+		font-size: 32px;
 	}
 
 	a {
 		color: var(--palm-green);
+		cursor: pointer;
 		font-family: 'Fira Code', monospace;
 		font-size: 16px;
 		text-decoration: none;
@@ -91,3 +94,8 @@ export default css.global`
 		}
 	}
 `;
+
+
+// export default css.global`
+	
+// `;
