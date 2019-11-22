@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 export default createGlobalStyle`
 	@font-face {
 		font-family: 'Fira Sans';
-		src: url('/public/fonts/FiraSans-Book.otf');
+		src: url('fonts/FiraSans-Book.otf');
 		font-weight: normal;
 		font-display: auto;
 		font-style: normal;
@@ -11,9 +11,9 @@ export default createGlobalStyle`
 
 	@font-face {
 		font-family: 'Fira Code';
-		src: url('/public/fonts/FiraCode-Retina.otf') format('opentype'),
-			url('/public/fonts/FiraCode-Retina.woff') format('woff'),
-			url('/public/fonts/FiraCode-Retina.ttf') format('truetype');
+		src: url('fonts/FiraCode-Retina.otf') format('opentype'),
+			url('fonts/FiraCode-Retina.woff') format('woff'),
+			url('fonts/FiraCode-Retina.ttf') format('truetype');
 		font-weight: normal;
 		font-display: auto;
 		font-style: normal;
