@@ -4,6 +4,7 @@ export const StyledTitle = styled.h1`
 	font-size: 98px;
 	font-weight: bolder;
 	margin: 0;
+	text-align: center;
 
 	@media screen and (max-width: 600px) {
 		font-size: 49px;

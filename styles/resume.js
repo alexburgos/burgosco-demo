@@ -1,11 +1,9 @@
-import css from 'styled-jsx/css';
+import styled from 'styled-components';
 
-export default css`
-	.experience {
-		display: flex;
-		flex-direction: column;
-		width: 600px;
-	}
+export const StyledResumeSection = styled.section` 
+	display: flex;
+	flex-direction: column;
+	width: 600px;
 
 	p {
 		text-align: justify;
@@ -16,8 +14,6 @@ export default css`
 	}
 
 	@media screen and (max-width: 600px) {
-		.experience {
-			width: 100%;
-		}
+		width: 100%;
 	}
 `;

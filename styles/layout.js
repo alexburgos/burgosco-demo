@@ -20,12 +20,15 @@ export default createGlobalStyle`
 	}
 
 	:root {
-		--palm-green: #598a78;
+		--palm-green: #9BA36B;
 		--palm-brown: #8b4513;
 	}
 
 
 	body{
+		background-color: ${props =>
+			props.theme.primary === 'dark' ? '#2E3440' : '#fff'};
+		color: ${props => (props.theme.primary === 'dark' ? '#fff' : '#333')};
 		margin: 0;
 		font-family: 'Fira Sans', Helvetica, sans-serif;
 	}

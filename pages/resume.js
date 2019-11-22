@@ -1,11 +1,11 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import resume from '../styles/resume';
+import { StyledResumeSection } from '../styles/resume';
 
 const Resume = props => {
 	return (
 		<Layout>
-			<section className="experience main">
+			<StyledResumeSection className="experience main">
 				<h1>Experience:</h1>
 				<p>
 					<span>Food52 - Front End Engineer — NY — 2017 - 2019</span> As part of the Product
@@ -33,8 +33,7 @@ const Resume = props => {
 				<p>
 					<span>	MiMedia - UI Engineer — NY — 2013 - 2014</span> As a UI Engineer I worked with a front end stack (Backbone) to build features for a media storage and backup platform. I implemented a payment gateway using Stripe’s API and worked on the navigation elements of the platform.
 				</p>
-			</section>
-			<style jsx>{resume}</style>
+			</StyledResumeSection>
 		</Layout>
 	);
 };

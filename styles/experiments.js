@@ -1,23 +1,21 @@
-import css from 'styled-jsx/css';
+import styled from 'styled-components';
 
-export default css`
-	.experiments {
-		display: flex;
-		flex-direction: column;
-	}
+export const StyledExperimentsSection = styled.section`
+	display: flex;
+	flex-direction: column;
+`;
 
-	.experiment {
-		margin-top: 25px;
-		border: 1px solid var(--palm-green);
-		padding: 20px;
-		border-radius: 4px;
-	}
+export const StyledExperiment = styled.div`
+	margin-top: 25px;
+	border: 1px solid var(--palm-green);
+	padding: 20px;
+	border-radius: 4px;
 
-	.experiment h3 {
+	h3 {
 		margin: 0;
 	}
 
-	.experiment p {
+	p {
 		font-size: 13px;
 		margin: 10px 0;
 	}
