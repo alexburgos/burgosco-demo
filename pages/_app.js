@@ -1,30 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import NextApp from 'next/app';
 import { ThemeProvider } from 'styled-components';
+import GlobalStyles from '../styles/globalStyles';
+import { lightTheme, darkTheme } from '../styles/themes';
 
-let theme = {
-  primary: 'dark'
-};
-export default class App extends NextApp {
-  state = {
-    theme: theme
-  };
 
-  setTheme = () => {
-    this.setState({ theme: !this.state.theme});
+export default function App({ Component, pageProps }) {
+  const [theme, setTheme] = useState('light');
+  const themeToggler = () => {
+    theme === 'light' ? setTheme('dark') : setTheme('light')
   }
 
-	render() {
-    const { Component, pageProps } = this.props;
-    let newPageProps = {
-      setTheme: this.setTheme,
-      ...pageProps
-    }
+  const newPageProps = {
+    theme: theme,
+    themeToggler: themeToggler,
+    ...pageProps
+  }
 
-		return (
-			<ThemeProvider theme={theme}>
-				<Component {...newPageProps} />
-			</ThemeProvider>
-		);
-	}
+  return (
+    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+      <GlobalStyles />
+      <Component {...newPageProps} />
+    </ThemeProvider>
+  );
 }

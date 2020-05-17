@@ -26,18 +26,19 @@ export default createGlobalStyle`
 
 
 	body{
-		background-color: ${props =>
-			props.theme.primary === 'dark' ? '#2E3440' : '#fff'};
-		color: ${props => (props.theme.primary === 'dark' ? '#fff' : '#333')};
+		background: ${({ theme }) => theme.body};
+    color: ${({ theme }) => theme.text};
+    font-family: 'Fira Sans', Helvetica, sans-serif;
+    transition: all 0.50s linear;
 		margin: 0;
-		font-family: 'Fira Sans', Helvetica, sans-serif;
 	}
 
 	#__next {
 		display: flex;
 		min-height: 100vh;
 		flex-direction: column;
-		align-items: center;
+    align-items: center;
+    position: relative;
 	}
 
 	.main {
@@ -97,8 +98,3 @@ export default createGlobalStyle`
 		}
 	}
 `;
-
-
-// export default css.global`
-	
-// `;

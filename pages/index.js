@@ -6,8 +6,8 @@ import {
 	StyledAboutSection
 } from '../styles/home';
 
-const Home = () => (
-	<Layout>
+const Home = ({theme, themeToggler}) => (
+	<Layout theme={theme} themeToggler={themeToggler} >
 		<StyledHomeContainer>
 			<StyledTitle>Alex Burgos</StyledTitle>
 

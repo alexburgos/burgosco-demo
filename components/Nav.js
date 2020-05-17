@@ -16,11 +16,6 @@ const Nav = () => (
 					<StyledAnchor>Resume</StyledAnchor>
 				</Link>
 			</StyledLi>
-			<StyledLi>
-				<Link href="/experiments">
-					<StyledAnchor>Playground</StyledAnchor>
-				</Link>
-			</StyledLi>
 		</StyledUl>
 	</StyledNav>
 );

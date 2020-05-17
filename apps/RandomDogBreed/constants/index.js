@@ -1,1 +1,0 @@
-export const DOG_BREEDS_URL = 'https://dog.ceo/api';
