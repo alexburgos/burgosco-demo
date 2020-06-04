@@ -1,12 +1,18 @@
 import React from 'react';
 import { func, string } from 'prop-types';
 import Button from '../styles/Button';
+import moonIcon from '../public/moon.svg';
+import sunIcon from '../public/sun.svg';
 
 const Toggle = ({ theme, themeToggler }) => {
-  return <Button onClick={themeToggler}>{theme === 'light' ? '🌙' : '☀️'}</Button>;
+   if (theme === 'light') {
+     return <Button onClick={themeToggler}>Dark</Button>
+   } else {
+     return <Button onClick={themeToggler}>Light</Button>;
+   }
 };
 Toggle.propTypes = {
   theme: string.isRequired,
-  toggleTheme: func.isRequired,
+  themeToggler: func.isRequired,
 };
 export default Toggle;
