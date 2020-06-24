@@ -1,6 +1,6 @@
 import React from 'react';
 import { func, string } from 'prop-types';
-import Button from '../styles/Button';
+import Button from '../styles/button';
 
 const Toggle = ({ theme, themeToggler }) => {
    if (theme === 'light') {
