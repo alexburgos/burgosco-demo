@@ -13,8 +13,8 @@ const Home = ({theme, themeToggler}) => (
 
 			<StyledAboutSection>
 					Front End developer, film photographer, and social activist from
-					Puerto Rico and New York but living in Stockholm. Currently learning
-					and building @ <a href="https://tretton37.com">tretton37</a>.
+					Puerto Rico and New York, currently based in Stockholm. Currently learning
+					and building @ <a href="https://schibsted.com">Schibsted</a>.
 			</StyledAboutSection>
 		</StyledHomeContainer>
 	</Layout>

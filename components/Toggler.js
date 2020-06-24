@@ -6,9 +6,9 @@ import sunIcon from '../public/sun.svg';
 
 const Toggle = ({ theme, themeToggler }) => {
    if (theme === 'light') {
-     return <Button onClick={themeToggler}>Dark</Button>
+     return <Button onClick={themeToggler}>🌚</Button>
    } else {
-     return <Button onClick={themeToggler}>Light</Button>;
+     return <Button onClick={themeToggler}>🌞</Button>;
    }
 };
 Toggle.propTypes = {
