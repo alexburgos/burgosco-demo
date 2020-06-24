@@ -1,8 +1,6 @@
 import React from 'react';
 import { func, string } from 'prop-types';
 import Button from '../styles/Button';
-import moonIcon from '../public/moon.svg';
-import sunIcon from '../public/sun.svg';
 
 const Toggle = ({ theme, themeToggler }) => {
    if (theme === 'light') {
