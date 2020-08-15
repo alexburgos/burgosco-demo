@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export default styled.button`
   font-family: inherit;
-  font-size: 28px;
+  font-size: 18px;
   background-color: inherit;
   border: none;
   color: ${({ theme }) => theme.text};
