@@ -8,7 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "^10.0.5",
+    "next": "^12.1.0",
     "react": "16.10.2",
     "react-dom": "16.10.2",
     "react-redux": "^7.1.3",
