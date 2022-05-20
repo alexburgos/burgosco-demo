@@ -6,7 +6,7 @@ import { lightTheme, darkTheme } from '../styles/themes';
 
 
 export default function App({ Component, pageProps }) {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
   const themeToggler = () => {
     theme === 'light' ? setTheme('dark') : setTheme('light')
   }

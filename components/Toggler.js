@@ -6,7 +6,7 @@ const Toggle = ({ theme, themeToggler }) => {
    if (theme === 'light') {
      return <Button onClick={themeToggler}>Lights Out</Button>
    } else {
-     return <Button onClick={themeToggler}>Light On</Button>;
+     return <Button onClick={themeToggler}>Lights On</Button>;
    }
 };
 Toggle.propTypes = {
